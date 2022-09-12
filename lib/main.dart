@@ -32,9 +32,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Productos App',
-      initialRoute: 'home',
+      initialRoute: 'login',
       routes: {
         'login': (context) => LoginScreen(),
+        'register': (context) => RegisterScreen(),
         'home': (context) => HomeScreen(),
         'product': (context) => ProductScreen(),
       },
