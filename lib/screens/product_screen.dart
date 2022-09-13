@@ -106,7 +106,8 @@ class _ProductScreenBody extends StatelessWidget {
 
                 await productService.saveOrCratedProduct(productForm.product);
 
-                FocusManager.instance.primaryFocus?.unfocus();
+                FocusScope.of(context).unfocus();
+                // FocusManager.instance.primaryFocus?.unfocus();
               },
         child: productService.isSaving
             ? const CircularProgressIndicator(
